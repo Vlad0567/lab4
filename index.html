@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Лабораторная работа №4</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form id="loanForm">
+      <label for="name">ФИО:</label><br />
+      <input type="text" id="name" name="name" /><br />
+      <label for="birthday">Дата рождения:</label><br />
+      <input type="date" id="birthday" name="birthday" /><br />
+      <label for="category">Категория:</label><br />
+      <select id="category" name="category">
+        <option value="employee">Служащий</option>
+        <option value="student">Учащийся</option>
+        <option value="entrepreneur">Предприниматель</option></select
+      ><br />
+      <label for="interests">Сфера интересов:</label><br />
+      <input
+        type="checkbox"
+        id="interest1"
+        name="Математика"
+        value="Interest1"
+      />
+      <label for="interest1"> Математика</label><br />
+      <input
+        type="checkbox"
+        id="interest2"
+        name="Физика"
+        value="Interest2"
+      />
+      <label for="interest2"> Физика</label><br />
+      <input
+        type="checkbox"
+        id="interest3"
+        name="Программирование"
+        value="Interest3"
+      />
+      <label for="interest3"> Программирование</label><br />
+      <label for="photo">Фото:</label><br />
+      <input type="file" id="photo" name="photo" /><br />
+
+
+
+
+
+        <label for="loanAmount">Сумма займа:</label><br />
+        <input type="number" id="loanAmount" name="loanAmount" required /><br />
+        <label for="loanTerm">Срок займа (в месяцах):</label><br />
+        <input type="number" id="loanTerm" name="loanTerm" required /><br />
+        <label for="interestRate">Процентная ставка:</label><br />
+        <input type="number" id="interestRate" name="interestRate" required /><br />
+        <label for="initialPayment">Размер первоначального взноса:</label><br />
+        <input type="number" id="initialPayment" name="initialPayment" required /><br />
+        <label for="commission">Комиссионные сборы:</label><br />
+        <input type="number" id="commission" name="commission" required /><br />
+        <label for="firstPaymentDate">Дата первой оплаты:</label><br />
+        <input type="date" id="firstPaymentDate" name="firstPaymentDate" required /><br />
+
+
+
+
+
+      <input type="submit" value="Отправить" />
+    </form>
+    <script src="script.js"></script>
+    <div id="output"></div>
+  </body>
+</html>
